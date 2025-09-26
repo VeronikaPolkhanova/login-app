@@ -26,7 +26,7 @@
 
 ## Моковые данные (для тестирования)
 
-Email: user@test.com
-Password: password123
-Успешный 2FA код: 123456
-Эмуляция server error (500): 000000
+- Email: user@test.com
+- Password: password123
+- Успешный 2FA код: 123456
+- Эмуляция server error (500): 000000
