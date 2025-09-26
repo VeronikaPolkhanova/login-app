@@ -4,6 +4,7 @@ import { Lock, UserRound } from "lucide-react";
 
 import Page from "../components/Page";
 import Logo from "../components/Logo";
+import Input from "../components/Input";
 import Button from "../components/Button";
 import { useAuth } from "../context/AuthContext";
 
@@ -35,22 +36,20 @@ const Login = () => {
       <form className="space-y-4" onSubmit={handleSubmit}>
         <div className="relative">
           <UserRound className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
-          <input
+          <Input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full pl-10 pr-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="relative">
           <Lock className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
-          <input
+          <Input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full pl-10 pr-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         {loginMutation.isError && (
